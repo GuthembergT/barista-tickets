@@ -1,0 +1,51 @@
+<!-- Worked with House Cass and my House Hayden 
+Kiany,Kevin S , Kevin C, Alief, Jerry,Khorally , Rodas,Tamika   -->
+
+<!doctype html>
+<html>
+<head>
+    <title>Boba Cafe</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+
+    <div class="jumbotron text-center">
+        <h1>Boba-Bae Cafe</h1>
+        <img src="img/boba.gif" alt="boba">
+
+        <h3>Login or Signup To See Orders:</h3>
+
+        <a href="/login" class="btn btn-default"><span class="fa fa-user"></span>Login</a>
+        <a href="/signup" class="btn btn-default"><span class="fa fa-user"></span>Signup</a>
+
+    </div>
+
+</div>
+
+<section class="cashierContainer">
+
+
+   <div class="cashierTitle">
+     <h2>Cashier: Input Order Below</h2>
+   </div>
+   <form class="cashierTitle"action="/messages" method="POST">
+     <input class="nameP" type="text" value="" placeholder="Customer name" name="name">
+     <input class="orderP" type="text" placeholder="Type of Boba" name="order" >
+     <br>
+    
+     <select class="size" name="size">
+       <option  value="Small">Small Size</option>
+       <option value="Medium">Medium Size</option>
+       <option value="Large">Large Size</option>
+     </select>
+
+     <button type="submit">Submit</button>
+   </form>
+   <img src="img/source.gif" alt="bobaS">
+
+   </section>
+</body>
+</html>
